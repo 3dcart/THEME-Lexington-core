@@ -22,6 +22,28 @@ body {
     line-height: 1.5;
     font-size: [base_font_size]px;
 }
+body {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.page-content {
+	flex: 1 0 auto;
+}
+footer {
+	flex-shrink: 0;
+}
+.homepage-blog-posts .post-image-container img {
+    height: 218px;
+}
+@media (max-width: 991px){
+.product-items.productList .product-item .img {
+    padding-right: 0;
+    width: 32%;
+}
+}
+
 a {
     color: #[btn_color];
     text-decoration: none;
@@ -58,7 +80,7 @@ h1 {
 color: #818181;
 line-height: 22px;
 }
-.flexslider .slides img {
+.flexslider.homeCarousel .slides img {
     max-width: 100%;
     display: block;
     width: 100%;
@@ -696,14 +718,13 @@ span.freeshipping {
 */
 .products-section {
     background-color: #fbfbfb;
-    padding: 30px 0;
+    padding: 15px 0;
 }
 .products-section h2 {
     margin: 0;
     font-size: 24px;
 }
 .products-section h2 {
-    margin-top: 35px;
     margin-bottom: 20px;
     line-height: 1;
     padding: 30px;

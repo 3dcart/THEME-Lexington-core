@@ -1,6 +1,21 @@
 /*
 ** Bootstrap over-rides
 */
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 .mailinglist-input.form-control,
 .search-form input[type="text"]:focus{
     outline: 0;
@@ -129,7 +144,7 @@ section#listing .special-actions .special-action button {
 }
 .btn-default,
 .btn {
-    color: #fff !important;
+    color: #000 !important;
     font-size: 14px;
     padding: 8px 12px;
     font-weight: 400;
@@ -269,7 +284,7 @@ transition: all 300ms ease;
 ** Template code
 */
 section.navbar-wrapper {
-    background: #037ca9
+    background: #037ca9;color:#fff;
 }
 .logo {
     height: 123px;
@@ -495,7 +510,7 @@ font-family: 'Nunito', sans-serif;
 }
 .mailinglist-submit {
     background-color: transparent;
-    color: #fff !important;
+    color: #000 !important;
     border-color: #ff5f00;
     background-color: #ff5f00;
     float: right;
@@ -666,6 +681,7 @@ section#home .product-item .action {
 .product-item del.regular-price {
     text-decoration: line-through;
 }
+.product-item .on-sale-badge{background-color: #9E293E;}
 .sale-price {
     color: #d04b64;
 }
@@ -673,7 +689,7 @@ del.original-price {
     font-weight: 500;
 }
 span.freeshipping {
-    color: #00a888;
+    color: #005747;
 }
 .product-item .status span:before {
     content: "-";
@@ -720,11 +736,11 @@ span.freeshipping {
     background-color: #fbfbfb;
     padding: 15px 0;
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     margin: 0;
     font-size: 24px;
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     margin-bottom: 20px;
     line-height: 1;
     padding: 30px;
@@ -734,7 +750,7 @@ span.freeshipping {
     font-size: 35px;
     text-transform: uppercase;
     font-family: 'Nunito', sans-serif;
-    background: url('/assets/templates/Lexington-core/images/bg.png') no-repeat center;
+    background: url('/assets/templates/Lexington-core/images/bg.png') no-repeat center #000;
 }
 }
 /* .products-section h2:after {

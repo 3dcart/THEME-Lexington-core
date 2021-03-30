@@ -1,6 +1,21 @@
 /*
 ** Bootstrap over-rides
 */
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 .mailinglist-input.form-control,
 .search-form input[type="text"]:focus{
     outline: 0;
@@ -673,7 +688,7 @@ del.original-price {
     font-weight: 500;
 }
 span.freeshipping {
-    color: #00a888;
+    color: #005747;
 }
 .product-item .status span:before {
     content: "-";
@@ -720,11 +735,11 @@ span.freeshipping {
     background-color: #fbfbfb;
     padding: 15px 0;
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     margin: 0;
     font-size: 24px;
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     margin-bottom: 20px;
     line-height: 1;
     padding: 30px;
@@ -734,7 +749,7 @@ span.freeshipping {
     font-size: 35px;
     text-transform: uppercase;
     font-family: 'Nunito', sans-serif;
-    background: url('/assets/templates/Lexington-core/images/bg.png') no-repeat center;
+    background: url('/assets/templates/Lexington-core/images/bg.png') no-repeat center #000;
 }
 }
 /* .products-section h2:after {

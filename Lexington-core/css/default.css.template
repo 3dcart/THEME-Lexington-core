@@ -1,6 +1,7 @@
 /*
 ** Bootstrap over-rides
 */
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900|Open+Sans:300,400,600,700,800&display=swap');
 #skip a
 {
 position:absolute;
@@ -15,6 +16,9 @@ overflow:hidden;
 position:static;
 width:auto;
 height:auto;
+}
+.antiCls { 
+    visibility: hidden; 
 }
 .mailinglist-input.form-control,
 .search-form input[type="text"]:focus{
@@ -871,7 +875,7 @@ span.freeshipping {
     .extrapages-shower a {
         display: block;
         text-align: center;
-        background: #ff5f00;
+        background: #FF6E1A;
     }
     ul.extrapages {
         margin: 0;

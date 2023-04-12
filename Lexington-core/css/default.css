@@ -1,6 +1,7 @@
 /*
 ** Bootstrap over-rides
 */
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900|Open+Sans:300,400,600,700,800&display=swap');
 #skip a
 {
 position:absolute;
@@ -15,6 +16,9 @@ overflow:hidden;
 position:static;
 width:auto;
 height:auto;
+}
+.antiCls { 
+    visibility: hidden; 
 }
 .mailinglist-input.form-control,
 .search-form input[type="text"]:focus{
@@ -60,7 +64,7 @@ footer {
 }
 
 a {
-    color: #ff5f00;
+    color: #FF6E1A;
     text-decoration: none;
 }
 h1 {
@@ -149,8 +153,8 @@ section#listing .special-actions .special-action button {
     padding: 8px 12px;
     font-weight: 400;
     text-transform: uppercase;
-    border-color: #ff5f00;
-    background-color: #ff5f00;
+    border-color: #FF6E1A;
+    background-color: #FF6E1A;
     border-radius: 5px;
     -webkit-transition: all 300ms ease;
 -moz-transition: all 300ms ease;
@@ -218,7 +222,7 @@ transition: all 300ms ease;
     /* min-height: 50px; */
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: #ff5f00;
+    color: #FF6E1A;
 }
 .dropdown-menu > li > a {
     font-size: 12px;
@@ -511,8 +515,8 @@ font-family: 'Nunito', sans-serif;
 .mailinglist-submit {
     background-color: transparent;
     color: #000 !important;
-    border-color: #ff5f00;
-    background-color: #ff5f00;
+    border-color: #FF6E1A;
+    background-color: #FF6E1A;
     float: right;
     width: auto;
     font-size: 18px;
@@ -872,7 +876,7 @@ span.freeshipping {
     .extrapages-shower a {
         display: block;
         text-align: center;
-        background: #ff5f00;
+        background: #FF6E1A;
     }
     ul.extrapages {
         margin: 0;
@@ -991,6 +995,7 @@ span.freeshipping {
 .mailinglist-response {
     margin: 10px 0;
     padding: 10px 20px;
+
     font-size: 12px;
     background-color: #2d2d2d;
     color: #ccc;

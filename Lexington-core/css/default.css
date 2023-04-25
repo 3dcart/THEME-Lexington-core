@@ -20,6 +20,11 @@ height:auto;
 .antiCls { 
     visibility: hidden; 
 }
+@media (max-width: 767px) {
+	.antiCls-xs { 
+		visibility: hidden; 
+	}
+}
 .mailinglist-input.form-control,
 .search-form input[type="text"]:focus{
     outline: 0;
